@@ -1,0 +1,338 @@
+/*=============================================
+=    Fondo de Pantalla (Mayo 9-2019) HMM     =
+=============================================*/
+
+body {
+    background: rgb(1, 62, 66);;
+    z-index: 5;
+    color: rgb(3, 233, 250);
+}
+
+/*================================================
+= Contenedor de fondo binario (Mayo 9-2019) HMM  =
+=================================================*/
+
+#caja-binario {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+/*================================================
+= Contenedor de Robot Mamá (Mayo 9-2019) HMM  =
+=================================================*/
+
+#caja-mama {
+    width: 320px;
+    height: 530px;
+    border: solid 2px rgba(15, 201, 40, 0);
+    margin: -755px 531px;
+    z-index: 3;
+}
+
+/* cabeza */
+
+#cabeza {
+    width: 200px;
+    height: 125px;
+    background: rgb(8, 8, 8);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 40%;
+    box-shadow: 16px 2px 1px 16px white;
+    z-index: 3;
+    position: relative;
+}
+
+/* lente - contenedor de ojos */
+
+#lente {
+    height: 60px;
+    width: 150px;
+    background: rgba(24, 159, 239, 0.11);
+    border-radius: 50px;
+    position: absolute;
+    margin: inherit;
+    margin-left: 24px;
+    box-shadow: 2px -3px 7px 13px rgba(24, 159, 239, 0.12);
+    display: flex;
+} 
+
+/* cejas */
+
+.cejas{
+    height: 50px;
+    width: 44px;  
+    border-radius: 50%; 
+    z-index: -2;    
+    position: absolute;
+}
+
+#cejas-izq {   
+    box-shadow: inset 0px 3px 0px -2px white;    
+    left: 14px;
+    top: -13px;
+    
+}
+#ceja-der {   
+    box-shadow: inset 0px 3px 0px -2px white;   
+    right: 15px;
+    top: -13px;
+}
+
+/* borde ojos */
+
+#borde-izq {
+    height: 28px;
+    width: 42px;
+    background: #ffffff24;
+    display: flex;
+    border-radius: 100px 100px 0 0;
+    position: absolute;
+    margin-top: 2px;
+    border: solid 1px aqua;
+
+    float: right;
+    margin-left: 92px;
+}
+
+#borde-der {
+    height: 28px;
+    width: 42px;
+    background: #ffffff24;
+    display: flex;
+    border-radius: 100px 100px 0 0;
+    position: absolute;
+    z-index: -1;
+    border: solid 1px aqua;
+    
+    float: left;
+    margin-left: 15px;
+    margin-top: 2px;    
+}
+
+/* ojos */
+
+.ojos {
+    height: 41px;
+    width: 38px;
+    background: white;
+    border-radius: 50%;
+    border: solid 3px black;
+    box-shadow: 2px 2px 11px 0px black;
+    margin: auto;
+    margin-top: 4px;
+    position: relative;
+}
+
+#ojo-izq {
+    float: left;
+    margin: 2px;
+    }
+
+#ojo-der {
+    float: right;
+    margin: 2px;
+}
+
+    .pupilas {
+    padding: 1px;
+    height: 26px;
+    width: 24px;
+    background: black;
+    border-radius: 50%;
+    border: solid 4px rgba(15, 131, 177, 0.76);
+    padding: flex;
+    display: flex;
+    position: relative;
+    }
+
+/* nariz */
+
+#nariz {
+    width: 57px;
+    height: 1px;    
+    background: #03e0fbad;
+    position: absolute;
+    margin: 55px 0px 0px 48px;
+    box-shadow: -6px -3px 42px 12px #04a2b5;
+}
+
+/* difuminacion boca */
+
+#punto {
+    width: 5px;
+    height: 5px;
+    background: #03e0fbad;
+    border-radius: 50%;
+    position: absolute;
+    margin: 50px 0px 0px 73px;
+    box-shadow: 0px 2px 16px 16px #03e0fbad;
+}
+
+#boca {
+    width: 55px;
+    height: 20px;
+    background: rgb(150, 77, 77);
+    border: solid 1px #076572ad;
+    border-radius: 0px 0px 40px 40px;
+    position: absolute;
+    margin: 56px 48px;
+    box-shadow: inset -1px 0px 14px 2px black;
+}
+
+/* cuello */
+
+#cilindro {
+    width: 35px;
+    height: 36px;
+    background-color: #666;
+    border-radius: 65px / 25px;
+    margin-top: 17px;
+    transform-origin: bottom left;
+    transform: skewx(10deg) translatex(150px);
+    position: relative;
+    z-index: 1;
+    box-shadow: inset -1px 0px 14px 2px #a99e9e;
+}
+
+#cuello {
+    width: 28px;
+    height: 0px;
+    border-right: 10px solid transparent;
+    border-left: 13px solid transparent;
+    border-bottom: 30px solid #807d7d;
+    margin-left: 135px;
+    position: relative;
+    margin-top: -14px;
+    z-index: 2;
+    box-shadow: inset -1px 0px 14px 2px #a99e9e;
+}
+
+/* cuerpo */
+
+#cuerpo {
+    width: 280px;
+    height: 266px;
+    background: white;
+    margin: auto;
+    margin-top: -2px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 4;
+    box-shadow: inset -25px 31px 31px -16px rgba(0,0,0,0.36);
+}
+
+#bafle {
+    width: 130px;
+    height: 29px;
+    background: gray;
+    margin-top: 160px;
+    margin-left: 38px;
+    position: absolute;
+    border-radius: 20%;
+    border: solid rgb(64, 64, 68) 1px;
+    z-index: 5;
+    transform: rotate(5deg);
+}
+
+#blafle-2 {
+    width: 27px;
+    height: 16px;
+    background: gray;
+    margin-top: 103px;
+    margin-left: 26px;
+    position: absolute;
+    border-radius: 29%;
+    border: solid rgb(64, 64, 68) 1px;
+    z-index: 6;
+    transform: rotate(-15deg);
+}
+
+#llanta {
+    width: 40px;
+    height: 164px;
+    background: white;
+    float: right;
+    margin-right: -3px;
+    margin-top: 63px;
+    border-radius: 50%;
+    border: solid rgb(46, 183, 201) 17px;
+    z-index: 5;
+    transform: rotate(10deg);
+}
+
+#llanta-interna {
+    width: 72px;
+    height: 176px;
+    background: white;
+    float: right;
+    margin-right: -26px;
+    margin-top: -5px;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+#llanta-izq {
+    width: 48px;
+    height: 134px;
+    background: rgb(46, 183, 201);
+    float: left;
+    margin-left: 0px;
+    margin-top: 78px;
+    border-radius: 50%;
+    border: solid white 2px;
+    z-index: -10;
+    transform: rotate(-7deg);
+}
+
+#llanta-interna-izq {
+    width: 72px;
+    height: 167px;
+    background: white;
+    float: left;
+    margin-left: 2px;
+    margin-top: -16px;
+    border-radius: 50%;
+    z-index: -10;
+    border-left: solid #04a2b5 2px;
+}
+
+#base {
+    width: 141px;
+    height: 13px;
+    border-bottom: 30px solid white;
+    margin-top: -44px;
+    margin-left: 101px;
+    border-radius: 29px 0px 77px 61px;
+}
+
+#rueda {
+    width: 39px;
+    height: 20px;
+    background: #04a3b5fd;
+    border-radius: 31%;
+    margin-left: 141px;
+    margin-top: -12px;
+    position: absolute;
+    z-index: 1;
+}
+
+/*=====  End of Section Robot Mamá (Mayo 14-2019) HMM  = ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
